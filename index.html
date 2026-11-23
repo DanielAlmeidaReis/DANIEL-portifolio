@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Daniel Almeida Reis — Administrador e estudante de Análise e Desenvolvimento de Sistemas em transição para a área de TI.">
+  <meta name="author" content="Daniel Almeida Reis">
+
+  <!-- Open Graph (prévia ao compartilhar o link do GitHub Pages) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Daniel Almeida Reis | Portfólio">
+  <meta property="og:description" content="Administrador no MEC e estudante do 2º semestre de ADS em busca de oportunidades na área de TI.">
+  <meta property="og:locale" content="pt_BR">
+
+  <title>Daniel Almeida Reis | Portfólio</title>
+
+  <!-- Favicon em SVG inline -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%238b5cf6'/%3E%3Cstop offset='100%25' stop-color='%233b82f6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-size='26' font-weight='bold'%3EDAR%3C/text%3E%3C/svg%3E">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos separados -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <!-- Cabeçalho e Navegação -->
+  <header class="header" id="header">
+    <div class="container header__container">
+      <a href="#inicio" class="logo">
+        Daniel<span class="logo__accent">.dev</span>
+      </a>
+
+      <nav class="nav" id="nav-menu" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link">Início</a></li>
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#habilidades" class="nav__link">Habilidades</a></li>
+          <li><a href="#trajetoria" class="nav__link">Trajetória</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <!-- Botão de alternância de tema -->
+        <button
+          type="button"
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Alternar entre tema escuro e claro"
+          title="Alternar tema"
+        >
+          <span class="theme-toggle__icon" id="theme-icon" aria-hidden="true">☀️</span>
+        </button>
+
+        <!-- Botão do menu mobile -->
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Seção Inicial (Hero) -->
+    <section class="hero section" id="inicio">
+      <div class="container hero__container">
+        <div class="hero__content reveal">
+          <span class="badge">Disponível para oportunidades em TI</span>
+          <h1 class="hero__title">
+            Olá, eu sou <br>
+            <span class="text-gradient">Daniel Almeida Reis</span>
+          </h1>
+          <p class="hero__subtitle">
+            Administrador há 3 anos no Ministério da Educação e estudante do 2º semestre de
+            <strong>Análise e Desenvolvimento de Sistemas (ADS)</strong>. Unindo organização,
+            criatividade e tecnologia para construir soluções de impacto.
+          </p>
+          <div class="hero__buttons">
+            <a href="#contato" class="btn btn--primary">Entrar em Contato</a>
+            <a href="#sobre" class="btn btn--outline">Conhecer Minha História</a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="profile-frame">
+            <!-- Substitua assets/img/perfil.jpg pela sua foto real -->
+            <img
+              src="./assets/img/perfil.jpg"
+              alt="Foto de Daniel Almeida Reis"
+              class="profile-frame__img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+            <div class="profile-frame__fallback" aria-hidden="true">
+              <span>DAR</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Sobre Mim -->
+    <section class="about section" id="sobre">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Quem sou eu</span>
+          <h2 class="section__title">Sobre Mim</h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>
+              Tenho 23 anos e iniciei minha graduação em <strong>Análise e Desenvolvimento de Sistemas</strong>
+              no começo de 2026, cursando atualmente o 2º semestre. Atuo há 3 anos na área administrativa
+              do <strong>Ministério da Educação</strong>, experiência que me trouxe forte senso de
+              responsabilidade, organização e visão de processos.
+            </p>
+            <p>
+              Hoje, meu principal objetivo é conquistar minha oportunidade na área de
+              <strong>Tecnologia da Informação</strong>. Além dos estudos em desenvolvimento, tenho
+              alta agilidade em digitação e experiência prática com <strong>edição de vídeo</strong>,
+              já tendo atendido profissionais autônomos em projetos sob demanda.
+            </p>
+            <p>
+              Tenho facilidade para aprender novas ferramentas e total disposição para encarar
+              projetos grandes e desafiadores.
+            </p>
+          </div>
+
+          <div class="about__highlights reveal">
+            <div class="stat-card">
+              <span class="stat-card__number text-gradient">3+</span>
+              <span class="stat-card__label">Anos de experiência administrativa no MEC</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__number text-gradient">2º</span>
+              <span class="stat-card__label">Semestre de ADS (início em 2026)</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__number text-gradient">23</span>
+              <span class="stat-card__label">Anos — foco total em transição para TI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Habilidades -->
+    <section class="skills section" id="habilidades">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Competências</span>
+          <h2 class="section__title">Minhas Habilidades</h2>
+        </div>
+
+        <div class="skills__grid">
+          <article class="card reveal">
+            <div class="card__icon">💻</div>
+            <h3 class="card__title">Tecnologia &amp; ADS</h3>
+            <p class="card__desc">
+              Desenvolvimento contínuo na graduação em Sistemas, com foco em lógica, estruturação
+              de páginas web (HTML, CSS, JavaScript) e boas práticas de TI.
+            </p>
+            <div class="tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">ADS</span>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">🎬</div>
+            <h3 class="card__title">Edição de Vídeo</h3>
+            <p class="card__desc">
+              Experiência prática em cortes, ritmo, tratamento visual e entrega de vídeos voltados
+              para profissionais autônomos e conteúdo digital.
+            </p>
+            <div class="tags">
+              <span class="tag">Audiovisual</span>
+              <span class="tag">Freelance</span>
+              <span class="tag">Criatividade</span>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">⌨️</div>
+            <h3 class="card__title">Digitação &amp; Produtividade</h3>
+            <p class="card__desc">
+              Alta velocidade e precisão em digitação, facilitando rotinas administrativas,
+              documentação técnica e agilidade na escrita de código.
+            </p>
+            <div class="tags">
+              <span class="tag">Agilidade</span>
+              <span class="tag">Precisão</span>
+              <span class="tag">Rotina Digital</span>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">📊</div>
+            <h3 class="card__title">Gestão &amp; Perfil</h3>
+            <p class="card__desc">
+              Vivência institucional em administração pública, facilidade em aprender novas
+              tecnologias e disposição para atuar em projetos de grande porte.
+            </p>
+            <div class="tags">
+              <span class="tag">Administração</span>
+              <span class="tag">Rápido Aprendizado</span>
+              <span class="tag">Projetos Grandes</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Trajetória e Projetos -->
+    <section class="timeline-section section" id="trajetoria">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Experiência &amp; Formação</span>
+          <h2 class="section__title">Minha Trajetória</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline__item reveal">
+            <span class="timeline__date">2026 — Atual</span>
+            <h3 class="timeline__title">Análise e Desenvolvimento de Sistemas (ADS)</h3>
+            <p class="timeline__place">Graduação Tecnológica • 2º Semestre</p>
+            <p class="timeline__desc">
+              Formação voltada ao desenvolvimento de software, arquitetura de sistemas e base sólida
+              para atuação profissional na área de Tecnologia da Informação.
+            </p>
+          </article>
+
+          <article class="timeline__item reveal">
+            <span class="timeline__date">Últimos 3 anos — Atual</span>
+            <h3 class="timeline__title">Atuação em Administração</h3>
+            <p class="timeline__place">Ministério da Educação (MEC)</p>
+            <p class="timeline__desc">
+              Apoio e condução de rotinas administrativas, organização de demandas, comunicação
+              institucional e suporte a processos internos com foco em eficiência.
+            </p>
+          </article>
+
+          <article class="timeline__item reveal">
+            <span class="timeline__date">Projetos Autônomos</span>
+            <h3 class="timeline__title">Editor de Vídeo Freelancer</h3>
+            <p class="timeline__place">Atendimento a Profissionais Autônomos</p>
+            <p class="timeline__desc">
+              Produção e edição de vídeos personalizados para clientes independentes, garantindo
+              qualidade visual, clareza na mensagem e cumprimento de prazos.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section class="contact section" id="contato">
+      <div class="container">
+        <div class="contact__box reveal">
+          <span class="section__tag">Vamos conversar</span>
+          <h2 class="section__title">Entre em Contato</h2>
+          <p class="contact__desc">
+            Estou aberto a oportunidades de estágio, vagas júnior em TI e projetos desafiadores.
+            Escolha o canal que preferir para falar comigo:
+          </p>
+
+          <div class="contact__cards">
+            <div class="contact-card">
+              <span class="contact-card__label">E-mail</span>
+              <a href="mailto:randommac5br@gmail.com" class="contact-card__value">
+                randommac5br@gmail.com
+              </a>
+              <div class="contact-card__actions">
+                <a href="mailto:randommac5br@gmail.com" class="btn btn--primary btn--sm">
+                  Enviar E-mail
+                </a>
+                <button type="button" class="btn btn--outline btn--sm" id="copy-email-btn">
+                  Copiar E-mail
+                </button>
+              </div>
+              <span class="copy-feedback" id="copy-feedback" role="status" aria-live="polite"></span>
+            </div>
+
+            <div class="contact-card">
+              <span class="contact-card__label">Instagram</span>
+              <a
+                href="https://www.instagram.com/danielalmeida_king"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-card__value"
+              >
+                @danielalmeida_king
+              </a>
+              <div class="contact-card__actions">
+                <a
+                  href="https://www.instagram.com/danielalmeida_king"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn--primary btn--sm"
+                >
+                  Acessar Perfil
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <p class="footer__copy">
+        &copy; <span id="current-year"></span> Daniel Almeida Reis. Todos os direitos reservados.
+      </p>
+      <a href="#inicio" class="footer__top">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <!-- Script separado -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
