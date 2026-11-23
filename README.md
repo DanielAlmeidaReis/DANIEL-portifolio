@@ -2,7 +2,7 @@
 
 Site portfólio pessoal desenvolvido com **HTML5**, **CSS3** e **JavaScript puro**, responsivo para dispositivos móveis, com alternância entre tema escuro (padrão) e tema claro.
 
-🔗 **Acesse o site online:** [https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/](https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/)
+🔗 **Acesse o site online:** [https://DanielAlmeidaReis.github.io/DANIEL-portifolio/](https://DanielAlmeidaReis.github.io/DANIEL-portifolio/)
 
 ## Funcionalidades
 
